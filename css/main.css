@@ -1,0 +1,129 @@
+@charset "utf-8";
+*{
+    /* 요소의크기를 box크기로 정하는것 */
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* 가운데 정렬 */
+    margin: 0;
+    padding: 0;
+}
+.movie{
+    margin: 0 auto;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top{
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.t1{
+    position: block;
+    width: 33.3%;
+    height: 100%;
+    margin: 10px;
+    border: 1px solid red;
+    margin-top: 105px;
+    flex : 1;
+}
+
+.t2{
+    position:block;
+    width: 44.4%;
+    height: 100%;
+    border: 1px solid red;
+    margin: 10px;
+    flex : 3;
+}
+
+.t3{
+    position:relative;
+    width: 44.4%;
+    border: 1px solid red;
+    margin: 10px;
+    flex: 1;
+
+}
+.grid{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;    
+}
+.t3>.movie3{
+    position: absolute;
+}
+/* 메뉴 */
+.topnav{
+    overflow: hidden;
+    background-color: black;
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.content{
+    display: grid;
+    background-color: azure;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.m1{
+    position: relative;
+    height: auto;
+    width: 100%;
+    border: 1px solid red;
+}
+.m2{
+    position:static;
+    border: 1px solid red;
+    float: left;
+    width: 100%;
+}
+.m3{
+    position: static;
+    height: 100%;
+    width: 100%;
+    border: 1px solid red;
+}
+.m4{
+    height: 100%;
+    width: 100%;
+    border: 1px solid red;
+}
+.footer {
+    background-color: antiquewhite;
+    padding: 10px;
+}
+.wee > .wee_sub{
+    display: block;
+    float: left;
+    border: 2px solid red;
+    margin: 20px;
+    height: 234px;
+    width: 170px;
+}
+.wee3 > .wee_sub2{
+    display: block;
+    float: left;
+    border: 2px solid red;
+    margin: 20px;
+    height: 234px;
+    width: 170px;
+}
+.wee_text {
+    border: 1px solid rgb(228, 112, 112);
+    position: relative;
+    top: 0;
+}

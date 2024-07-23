@@ -14,18 +14,20 @@ header {
     position: relative;
     z-index: -1;
 }
-.main > .slideContent{
+.slideContent{
     width: 800px; height: 350px; background-color: blueviolet;
     position: absolute;
-    
+    flex: 1;
 }
-.main > .content {
+.content {
     width: 800px; height: 200px; background-color: chartreuse;
     position: absolute;
     top: 350px;
+    flex: 1;
 }
-.main > footer{
+footer{
     width: 800px; height: 100px; background-color: red;
     position: absolute;
     top: 550px;
+    flex:auto;
 }

@@ -17,17 +17,17 @@ header {
 .slideContent{
     width: 800px; height: 350px; background-color: blueviolet;
     position: absolute;
-    flex: 1;
+    flex: 350px;
 }
 .content {
     width: 800px; height: 200px; background-color: chartreuse;
     position: absolute;
-    top: 350px;
-    flex: 1;
+    flex: 200px;
+    top:350px;
 }
 footer{
     width: 800px; height: 100px; background-color: red;
     position: absolute;
-    top: 550px;
-    flex:auto;
+    margin-top: 550px;
+    flex:100px;
 }

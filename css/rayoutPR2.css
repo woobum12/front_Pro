@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: yellow;
+    height: 100px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.inner{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: red;
+}
+
+.main{
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.slideContent{
+    background-color: greenyellow;
+    height: 300px;
+}
+
+.content{
+    display: flex;
+    height: 200px;
+    background: green;
+}
+
+.c1{
+    flex: 1;
+    background-color: violet;
+}
+
+.c2 {
+    flex: 1;
+    background-color: pink;
+}
+
+.c3{
+    flex: 1;
+    background-color: aquamarine;
+}
+
+footer{
+    background-color: yellow;
+    height: 100px;
+    width: 70%;
+    margin: 0 auto;
+
+}

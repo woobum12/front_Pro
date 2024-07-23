@@ -11,6 +11,8 @@ header {
 }
 .main {
     width: 800px; height: 650px; background-color: violet;
+    display: flex;
+    flex-direction: column;
     position: relative;
     z-index: -1;
 }
@@ -18,16 +20,19 @@ header {
     width: 800px; height: 350px; background-color: blueviolet;
     position: absolute;
     flex: 350px;
+    border: 1px solid red;
 }
 .content {
     width: 800px; height: 200px; background-color: chartreuse;
     position: absolute;
     flex: 200px;
     top:350px;
+    border: 1px solid red;
 }
 footer{
     width: 800px; height: 100px; background-color: red;
     position: absolute;
     margin-top: 550px;
     flex:100px;
+    border: 1px solid black;
 }

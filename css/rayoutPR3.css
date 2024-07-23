@@ -35,4 +35,9 @@ footer{
     margin-top: 550px;
     flex:100px;
     border: 1px solid black;
+    display: flex;
+}
+.f1{
+    flex: 10%;
+    background-color: aliceblue;
 }

@@ -1,34 +1,45 @@
+/* 기본 */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* 헤더 */
 header{
     background-color: yellow;
     height: 100px;
     width: 70%;
     margin: 0 auto;
 }
-
+/* 헤더 푸터 공통적용 */
 .inner{
     width: 1200px;
     height: 100px;
     margin: 0 auto;
     background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
+/* 헤더 > 이너 */
+.logo{
+    width: 200px; height: 60px; background-color: yellow;
+}
+.nav{
+    width: 800px; height: 100px; background-color: skyblue;
+}
+/* 메인 */
 .main{
     width: 1200px;
     height: 500px;
     margin: 0 auto;
 }
-
+/* 슬라이드 애니메이션 */
 .slideContent{
     background-color: greenyellow;
     height: 300px;
 }
-
+/* 공지사항 외.... */
 .content{
     display: flex;
     height: 200px;
@@ -36,17 +47,17 @@ header{
 }
 
 .c1{
-    flex: 1;
+    width: 33.33%;
     background-color: violet;
 }
 
 .c2 {
-    flex: 1;
+    width: 33.33%;
     background-color: pink;
 }
 
 .c3{
-    flex: 1;
+    width: 33.33%;
     background-color: aquamarine;
 }
 
@@ -56,4 +67,20 @@ footer{
     width: 70%;
     margin: 0 auto;
 
+}
+/* 푸터 > 이너 */
+.f1{
+    width: 20%;
+    height: 50px;
+    background-color: lightgray;
+}
+.f2{
+    width: 60%;
+    height: 50px;
+    background-color: violet;
+}
+.f3{
+    width: 20%;
+    height: 50px;
+    background-color: brown;
 }

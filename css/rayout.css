@@ -135,3 +135,9 @@ body {
     top: 7px;
     z-index: 4;
 }
+.ctText{
+    justify-content:center;
+    width: 980px;
+    position: absolute;
+    background-color: aqua;
+}

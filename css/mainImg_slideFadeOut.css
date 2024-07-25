@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    text-decoration: none;
+    list-style: none;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 940px;
+    height: 800px;
+    background-color: #f0f0f0;
+}
+.slide {
+    width: 940px;
+    height : 300px;
+    position: relative;
+    overflow: hidden;
+    /* 범위밖의 이미지는 안보이게 */
+}
+.slide > img {
+    /* width: 940; */
+    /* height: 300px */
+    /* 이미지 크기가 동일하고, slile */
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.slide > img:first-child {
+    /* img의 첫번째 자녀 이미지를 보이 */
+    opacity: 1;
+}

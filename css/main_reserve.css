@@ -18,7 +18,7 @@ body {
 }
 a {
     color: inherit;
-    text-decoration: 0;
+    text-decoration: none;
 }
 img {
     vertical-align: middle;
@@ -32,8 +32,11 @@ ul::after{
     clear: both;
     display: block;
 }
-h1 {
+h1 h2 h3 {
     font-weight: 500px;
+}
+element.style{
+    display: none;
 }
 /* cgv 시작 */
 .cgv_wrap {
@@ -106,6 +109,7 @@ h1 {
     white-space: nowrap;
     transform: translate(-50%, 0);
 }
+/* nav 메뉴 */
 .nav{
     position: absolute;
     left: 0;
@@ -126,4 +130,50 @@ h1 {
 }
 .nav .contents h1 {
     display: none;
+}
+.nav_menu{
+    display: inline-block;
+}
+.nav_menu > li:first-child {
+    width: 137px;
+}
+.nav_menu > li {
+    padding: 20px 0;
+}
+.nav_menu > li > h2 {
+    position: absolute;
+    top : 7px;
+}
+.nav_menu > li > h2 > a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #222;
+    line-height: 1.500em;
+}
+.nav_menu > li:first-child .nav_overMenu{
+    padding-left: 0;
+}
+.nav_overMenu{
+    position: relative;
+    margin-bottom: 8px;
+    padding: 25px 0 0 25px;
+}
+.nav_overMenu dt {
+    padding-top: 18px;
+}
+.nav_overMenu dt a {
+    font-weight: 700;
+    font-size: 14px;
+    color: #222;
+    line-height: 1.429em;
+}
+.nav_overMenu dt + dd {
+    margin-top: 8px;
+}
+.nav_overMenu h3 {
+    height: auto;
+    margin: 0;
+    line-height: 1em;
+    text-align: left;
+    background-image: none;
 }

@@ -24,24 +24,42 @@ header {
     height: 100px; background-color: pink;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-
+/* 로고 ---------------------*/
 .logo {
     width : 200px;
-    height: 60px;
-    background-color: yellow;
+    height: 100%;
+    background-color: white;
+    position: relative;
 }
+.logo > h1 {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(206, 56, 56);
+}
+/* 메뉴 서브메뉴-------------- */
 .nav{
-    width: 800ox;
-    height: 100px;
+    width: 800px;
     background-color: greenyellow;
 }
+
+header .nav {width: 600px; margin: 58px 0 0 370px;}
+header .nav >ul {display: flex;}
+header ul a {display: block; text-align: center; background-color:#7dce83; padding: 10px;}
+
 .menu{
-    font-size: 17px;
+    width: 25%;
     position: relative;
-    display: inline-block;
 }
+.submenu { position: absolute; width: 100%; z-index: 998; display: none;}
+.menu:hover >a { color: red; background:yellow;}
+.submenu li:hover a {color: rebeccapurple; background: yellowgreen;}
 .dropdown{
     display: none;
     position: absolute;
@@ -76,6 +94,7 @@ header {
 
 /* 공지사항 ... */
 .content{
+    margin-top: 10px;
     height: 200px; 
     background-color: #ffcccc;
     display : flex;
@@ -85,14 +104,15 @@ header {
 .con1 {
     background-color: gray;
     width: 33.33%;
-} 
+}
+.tabMenu {display: flex;}
 .tabmenu li {display: inline-block; font-size: 18px; font-weight: 600;}
 /* tabMenu li { display: inline-block; font-size: 18px;} */
-.tabMenu li a {display: block; padding:10px;}
+.tabMenu li a {display: block; padding:10px; width: 100%; background-color: white;}
 .tabMenu li.on a {background-color: violet;}
 
 /* .tabMenu 내용부분: */
-.tabItem >* { height: 156px; padding:10px;}
+.tabItem >* { display: block; margin:10px;}
 .tabItem >*.on {background-color: #fff;}
 
 /* .notice 내용부분: */
@@ -127,20 +147,24 @@ font-size: 18px; font-weight: 600; background-color: #fff; padding: 10px;}
 footer {
     display: flex; 
     height: 100px; 
-    background-color: #ffad99;
+    background-color: rgb(241, 241, 231);
     align-items: center;
 }
-footer .footerLogo img{
+footer .footerLogo {
     display: block;
     width: 200px;
-    height: 40px;
+    height: 100%;
     font-size: 0;
     color: transparent;
+}
+footer .footerLogo img {
+    display: inline-block;
+    width: 100%;
+    height: 100px;
 }
 footer p{
     width: 70%;
     text-align: center;
-    background-color: yellow;
 }
 footer .sns a img{
     display: inline-block; width: 20px; margin-left: 20px;

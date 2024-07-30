@@ -12,21 +12,49 @@ a {
 .wrap {
     width: 1000px; height: 650px; display: flex; position: relative;
 }
+img {vertical-align: top;}
 /* 헤더 */
 header {
-    width: 200px; height: 650px; background-color: aqua;
+    width: 200px; height: 650px; 
 }
-
+/* 로고 */
 .logo{
     width: 200px;
     height: 60px;
-    background-color: aquamarine;
+    position: relative;
+}
+.logo a > h1 {
+    position: absolute;
+    text-align: center;
+    font-size: 23px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    color: orange; 
 }
 .nav{
     width: 200px;
-    height: 100px;
+    height: 590px;
     background-color: cornsilk;
 }
+/* 헤더 메뉴 */
+header .nav {margin-top: 20px;}
+header .nav > ul {width: 180px; padding-left: 14px;}
+header .nav a {
+    display: block;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+
+.submenu {
+    display: none;
+}
+.submenu li a {background-color: yellowgreen;}
+.menu:hover > a {color: #fff; background-color: violet;}
+.submenu li:hover a {color: #fff; background-color: violet;}
+
 /* 메인 */
 .main {
     width: 800px; height: 650px; background-color: violet;
@@ -36,19 +64,60 @@ header {
 .slideContent{
     height: 350px; background-color: blueviolet;
 }
+.slide {
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+.slide > img {
+    position: absolute;
+    top :0;
+    left: -100%;
+    opacity: 0;
+}
+.slide > img:first-child{
+    left: 0;
+    opacity: 1;
+}
+
 /* 메인 > 공지사항... */
 .content {
     height: 200px;
     display: flex;
 }
+/* 콘텐츠1 */
 .con1{
     width: 33.33%;
     background-color: darkmagenta;
 }
+.tabs li {display: inline-block; font-size: 18; font-weight: 600;}
+.tabs li a {display: block; padding: 10px;}
+
+.tab-news >* {height: 156px; padding: 10px;}
+.tab-news >*.news {background-color: aquamarine;}
+
+.news li{display: flex;}
+.news li a { 
+    display: inline-block; 
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.news li a span {margin-left: auto;}
+.news li:hover {text-decoration: underline;}
+/* 콘텐츠2 */
 .con2{
     width: 33.33%;
     background-color: blue;
 }
+.tabs2 li {display: inline-block; font-size: 18; font-weight: 600;}
+.tabs2 li a {display: block; padding: 10px;}
+
+.gallery>* {height: 156px; padding: 10px;}
+.gallery>*.news2 {background-color: violet;}
+.gallery .news2 {display: flex;}
+
 .con3{
     width: 33.33%;
     background-color: coral;

@@ -28,3 +28,12 @@ $(".slide").hover(
         timer=setInterval("autoslide()",3000);
     }
 )
+// 서브메뉴
+$(function(){
+    $(".menu").hover(function () {
+            $(this).find(".submenu").stop().slideDown()   
+        }, 
+        function () {
+            $(".submenu").stop().slideUp()
+        })
+    });

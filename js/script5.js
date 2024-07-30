@@ -12,12 +12,12 @@ function autoslide(){
     sno++;
     if(sno > eno)
         sno = 0;
-    }
+    
     $(slide[sno]).stop().animate({
         opacity: 1
         //      opacity: "1"와 동일
     },1000);
-
+};
 
 
 $(".slide").hover(
@@ -27,4 +27,13 @@ $(".slide").hover(
     function(){
         timer=setInterval("autoslide()",3000);
     }
-)
+);
+// 서브메뉴
+$(function(){
+$(".menu").hover(function () {
+        $(this).find(".submenu").stop().slideDown()   
+    }, 
+    function () {
+        $(".submenu").stop().slideUp()
+    })
+});

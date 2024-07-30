@@ -40,3 +40,41 @@ $(function(){
             $('.submenu').stop().slideUp(500)
         });
 });
+// tabMenu2
+$(".tab-news").click(function(){
+    $(this).css({
+        "border-bottom": "0",
+        "background-color": "#888"
+    });
+
+    $(".tab-gallery").css({
+        "border-bottom": "1px solid #000",
+        "background-color": "#888"
+    });
+
+    $(".gallery").hide();
+    $(".notice").show();
+});
+
+$(".tab-gallery").click(function (){
+
+    $(this).css({
+        "border-bottom": "0",
+        "background-color": "#888"
+    });
+
+    $(".tab-news").css({
+        "border-bottom": "1px solid #000",
+        "background-color": "#888"
+    });
+
+    $(".notice").hide();
+    $(".gallery").show();
+});
+
+function openPop() {
+    $(".pop").show("slow");
+}
+function closePop() {
+    $(".pop").hide("fast");
+}

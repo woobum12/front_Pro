@@ -41,31 +41,27 @@ $(function(){
         });
 });
 // tabMenu2
-$(".tab-news").click(function(){
+$(".tab-news > a").click(function(){
     $(this).css({
-        "border-bottom": "0",
-        "background-color": "#888"
+        "background-color": "white"
     });
 
-    $(".tab-gallery").css({
-        "border-bottom": "1px solid #000",
-        "background-color": "#888"
+    $(".tab-gallery > a").css({
+        "background-color": "violet"
     });
 
     $(".gallery").hide();
     $(".notice").show();
 });
 
-$(".tab-gallery").click(function (){
+$(".tab-gallery > a").click(function (){
 
     $(this).css({
-        "border-bottom": "0",
-        "background-color": "#888"
+        "background-color": "white"
     });
 
-    $(".tab-news").css({
-        "border-bottom": "1px solid #000",
-        "background-color": "#888"
+    $(".tab-news > a").css({
+        "background-color": "violet"
     });
 
     $(".notice").hide();

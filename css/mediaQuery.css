@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 처음 시작할때 화면색상 */
+.wrap {
+    background-color: aqua;
+    color: blue;
+}
+
+/* 화면이 가로가 아니면 비율 */
+/* @media not all and (orientation: landscape) {
+    .wrap {
+        background-color: yellow;
+        color: orange;
+    }
+
+} */

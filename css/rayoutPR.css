@@ -33,7 +33,7 @@ header {
     background-color: white;
     position: relative;
 }
-.logo > h1 {
+.logo a > h1 {
     position: absolute;
     left: 50%;
     top:50%;
@@ -134,11 +134,11 @@ header ul a {display: block; text-align: center; background-color:#7dce83; paddi
     font-weight: bold;
 }
 /* tabMenu li { display: inline-block; font-size: 18px;} */
-.tabs li a {display: block; padding:10px; width: 100%; background-color: white;}
+.tabs li a {display: block; padding:10px; width: 100%;}
 .tabs li.tab-gallery a {background-color: violet;}
-
+.tab-news a {background-color: #fff}
 /* .tabMenu 내용부분: */
-.tabItem >* { display: block; margin:10px;}
+.tabItem >* { height: 156px; padding: 10px}
 .tabItem >*.on {background-color: #fff;}
 
 /* .notice 내용부분: */

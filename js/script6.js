@@ -40,3 +40,10 @@ $(function(){
             $(".submenu").stop().slideUp()
         })
     });
+// 콘텐츠 팝
+function openPop(){
+    $("#contentpop").show("slow");
+}
+function closePop(){
+    $("#contentpop").hide("fast");
+}

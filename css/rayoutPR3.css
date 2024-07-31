@@ -15,13 +15,14 @@ a {
 img {vertical-align: top;}
 /* 헤더 */
 header {
-    width: 200px; height: 650px; 
+    width: 200px; height: 650px; background-color: cornsilk; 
 }
 /* 로고 */
 .logo{
     width: 200px;
     height: 60px;
     position: relative;
+    
 }
 .logo a > h1 {
     position: absolute;
@@ -44,8 +45,11 @@ header .nav > ul {width: 180px; padding-left: 14px;}
 header .nav a {
     display: block;
     text-align: center;
-    background-color: white;
+    background-color: #fff;
     padding: 10px;
+    border: 1px solid gold;
+    border-left: none;
+    border-right: none;
 }
 
 .submenu {
@@ -57,7 +61,7 @@ header .nav a {
 
 /* 메인 */
 .main {
-    width: 800px; height: 650px; background-color: violet;
+    width: 800px; height: 650px; 
     
 }
 /* 메인 > 슬라이드 애니메이션 */
@@ -84,56 +88,96 @@ header .nav a {
 .content {
     height: 200px;
     display: flex;
+    background-color: #fff;
 }
 /* 콘텐츠1 */
 .con1{
     width: 33.33%;
-    background-color: darkmagenta;
+    
 }
-.tabs li {display: inline-block; font-size: 18; font-weight: 600;}
-.tabs li a {display: block; padding: 10px;}
+.tabs {display: flex; }
+.tabs li{display: block; padding: 10px; height: 40px; background-color: #fff; font-weight: 600; font-size: large;}
 
-.tab-news >* {height: 156px; padding: 10px;}
-.tab-news >*.news {background-color: aquamarine;}
+
+.tab-news >*{background-color: #fff; height: 160px;}
 
 .news li{display: flex;}
 .news li a { 
-    display: inline-block; 
-    width: 150px;
+    display: inline-block;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin: 10px;
+    width: 200px;
 }
-.news li a span {margin-left: auto;}
+
+.news li span {white-space: nowrap; margin: 10px;}
 .news li:hover {text-decoration: underline;}
 /* 콘텐츠2 */
 .con2{
     width: 33.33%;
-    background-color: blue;
+    background-color: #fff;
 }
-.tabs2 li {display: inline-block; font-size: 18; font-weight: 600;}
-.tabs2 li a {display: block; padding: 10px;}
 
-.gallery>* {height: 156px; padding: 10px;}
-.gallery>*.news2 {background-color: violet;}
-.gallery .news2 {display: flex;}
+.tabs2 {display: flex;}
+.tabs2 li a {display: block; padding: 10px; height: 40px; background-color: #fff; font-weight: 600;font-size: large;}
+
+.gallery>* {height: 160px; padding: 10px; background-color: #fff;}
+.gallery .news2 {display: flex; justify-content: center; gap: 5px; align-items: center;}
 
 .con3{
     width: 33.33%;
-    background-color: coral;
+    background-color: #fff;
+    position: relative;
+}
+.banner a h2 {
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.banner a img {
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+}
+#contentpop{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    border: 1px solid black;
+    background-color: #fff;
+    display: none;
+}
+.contentpop p {
+    padding: 30px 30px;
+}
+.exit {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
 /* 메인 > 푸터 */
 footer{
     display: flex;
     align-items: center;
+    height: 100px;
 }
 footer p {
     width: 90%;
     text-align: center;
+    background-color: #fff
 }
 .bottomRight {
     display: flex;
     flex-wrap: wrap;
+    width: 180px; height: 100px;
 }
 .bottomRight >* {
     width: 100%;
@@ -145,6 +189,7 @@ footer p {
     justify-content: space-around;
     align-items: center;
     padding-top: 20px;
+
 }
 .sns li {
     width: 16%;

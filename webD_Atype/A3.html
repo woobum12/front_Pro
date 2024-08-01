@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./A3.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="logo"><a href="./A3.html"><h1>강원천문대</h1></a></div>
+            <nav>
+                <ul>
+                    <li class="menu">
+                        <a href="#">강원천문대</a>
+                    <ul class="submenu">
+                        <li><a href="#">천문대소개</a></li>
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </li>
+                    <li class="menu">
+                        <a href="#">이용안내</a>
+                    
+                    <ul class="submenu">
+                        <li><a href="#">프로그램</a></li>
+                        <li><a href="#">관람시간표</a></li>
+                        <li><a href="#">이달의 별자리</a></li>
+                    </ul>
+                </li>
+                    <li class="menu">
+                        <a href="#">천문대예약</a>
+                    
+                    <ul class="submenu">
+                        <li><a href="#">예약하기</a></li>
+                        <li><a href="#">예약확인</a></li>
+                        <li><a href="#">예약취소</a></li>
+                    </ul>
+                </li>
+                    <li class="menu">
+                        <a href="#">커뮤니티</a>
+                    
+                    <ul class="submenu">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">방문후기</a></li>
+                        <li><a href="#">자유게시판</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="slideImg">
+            <div class="slide">
+                <img src="./image/slideImg1.jpg" alt="슬라이드1" width="1200px" height="300px">
+                <img src="./image/slideImg2.jpg" alt="슬라이드2" width="1200px" height="300px">
+                <img src="./image/slideImg3.jpg" alt="슬라이드3" width="1200px" height="300px">
+                <img src="./image/slideImg4.jpg" alt="슬라이드4" width="1200px" height="300px">
+            </div>
+        </div>
+        <div class="content">
+        <div class="con1">
+            <div class="tab">
+                <ul class="tabs">
+                    <li class="tab-news"><a href="#">공지사항</a></li>
+                    <li class="tab-gallery"><a href="#">갤러리</a></li>
+                </ul>
+            </div>
+            <div class="tabItem">
+                <ul class="notice">
+                    <li><a href="javascript:openPop();">공지사항내용입니다공지사항내용입니다</a><span>공지사항날짜</span></li>
+                    <li><a href="#">공지사항내용입니다공지사항내용입니다</a><span>공지사항날짜</span></li>
+                    <li><a href="#">공지사항내용입니다공지사항내용입니다</a><span>공지사항날짜</span></li>
+                    <li><a href="#">공지사항내용입니다공지사항내용입니다</a><span>공지사항날짜</span></li>
+                </ul>
+                <ul class="gallrey">
+                    <li><a href="#"><img src="./image/gallery1.jpg" alt="갤러리1" width="100" height="100"></a></li>
+                    <li><a href="#"><img src="./image/gallery2.jpg" alt="갤러리2" width="100" height="100"></a></li>
+                    <li><a href="#"><img src="./image/gallery3.jpg" alt="갤러리3" width="100" height="100"></a></li>
+                </ul>
+            </div>
+            <div class="notice-page">
+                <div class="nt">공지사항</div>
+                <p><img src="./image/fLogo.png" alt="공지사항 내용" width="450" height="200"></p>
+                <p>
+                    안녕하세요<br>
+                    강원 천문대 공지사항입니다<br>
+                    8월 20일 부터 9월 1일까지 공사가 있을예정입니다<br>
+                    항상 감사합니다
+                </p>
+                <hr>
+                <p class="exit">
+                    <button onclick="closePop()">종료</button>
+                </p>
+            </div>
+        </div>
+        <div class="con2">
+            <div class="banner-click"><a href="#"><p>배너</p></a></div>
+            <div class="banner">
+                <img src="./image/banner.jpg" alt="배너사진">
+            </div>
+        </div>
+        <div class="con3">
+            <div class="baro-click"><a href="#"><p>바로가기</p></a></div>
+        <div class="baro">
+            <img src="./image/bro.jpg" alt="바로가기">
+        </div>
+        </div>
+        </div>
+        <footer>
+            <div class="footLogo"><img src="./image/footLogo2.png" alt="푸터로고"></div>
+            <div class="footRight">
+                <div class="footmenu">
+                    <div class="sns">
+                        <a href="#"><img src="./image/fSns.png" alt="페이스북" width="50" height="50"></a>
+                        <a href="#"><img src="./image/fSns2.png" alt="인스타" width="50" height="50"></a>
+                        <a href="#"><img src="./image/fSns3.png" alt="유튜브"width="50" height="50"></a>
+                    </div>
+                </div>
+                <div class="footCopy"><p>CopyRight ALL rights reserved 강원천문대</p></div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./jsQ/jquery-3.7.1.min.js"></script>
+    <script src="./A3.js"></script>
+</body>
+</html>

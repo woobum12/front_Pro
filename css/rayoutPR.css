@@ -44,13 +44,13 @@ header {
     color: rgb(206, 56, 56);
 }
 /* 메뉴 서브메뉴-------------- */
-.nav{
+nav{
     width: 800px;
     background-color: greenyellow;
 }
 
-header .nav {width: 600px; margin: 0 0 0 370px;}
-header .nav >ul {display: flex;}
+header nav {width: 600px;}
+header nav > ul {display: flex;}
 header ul a {display: block; text-align: center; background-color:#7dce83; padding: 10px;}
 
 .menu{

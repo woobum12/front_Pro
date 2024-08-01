@@ -37,3 +37,4 @@ $(".menu").hover(function () {
         $(".submenu").stop().slideUp()
     })
 });
+//갤러리

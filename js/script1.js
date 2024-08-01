@@ -33,11 +33,11 @@ $('.tabMenu li').click(function () {
 // menu
 $(function(){
 
-    $('header .nav >ul').hover(function () {
-        $(this).find('.submenu').stop().slideDown(1000)
+    $('header .nav > ul').hover(function () {
+        $(this).find('.submenu').stop().slideDown(1000);
     },
         function (){
-            $('.submenu').stop().slideUp(500)
+            $('.submenu').stop().slideUp(500);
         });
 });
 // tabMenu2

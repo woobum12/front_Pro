@@ -172,7 +172,7 @@ footer{
 footer p {
     width: 90%;
     text-align: center;
-    background-color: #fff
+    background-color: darkblue;
 }
 .bottomRight {
     display: flex;
@@ -189,7 +189,6 @@ footer p {
     justify-content: space-around;
     align-items: center;
     padding-top: 20px;
-
 }
 .sns li {
     width: 16%;

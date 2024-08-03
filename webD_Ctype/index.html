@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="logo"><a href="#"><img src="../image/images/logo1.png" alt=""></a></div>
+            <div class="nav">
+                <ul>
+                    <li class="menu">
+                        <a href="#">축제소개</a>
+                    <ul class="submenu">
+                        <li><a href="#">초대의 글</a></li>
+                        <li><a href="#">축제개요</a></li>
+                        <li><a href="#">축제연혁</a></li>
+                        <li><a href="#">오시는길</a></li>
+                    </ul>
+                </li>
+                    <li class="menu">
+                        <a href="#">행사안내</a>
+                        <ul class="submenu">
+                            <li><a href="#">셔틀버스안내</a></li>
+                            <li><a href="#">행사안내</a></li>
+                            <li><a href="#">행사일정</a></li>
+                            <li><a href="#">소공연장</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#">홍보마당</a>
+                        <ul class="submenu">
+                            <li><a href="#">축제소식</a></li>
+                            <li><a href="#">보도자료</a></li>
+                            <li><a href="#">음식레시피</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#">참여마당</a>
+                        <ul class="submenu">
+                            <li><a href="#">참가후기</a></li>
+                            <li><a href="#">연꽃갤러리</a></li>
+                            <li><a href="#">포토갤러리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    <div class="main">
+        <div class="slideImg">
+            <div class="slide">
+                <img src="./image/slideImgFlower1.jpg" alt="슬라이드1" width="800" height="350">
+                <img src="./image/slideImgFlower2.jpg" alt="슬라이드2" width="800" height="350">
+                <img src="./image/slideImgFlower3.jpg" alt="슬라이드3" width="800" height="350">
+            </div>
+        </div>
+        <div class="content">
+            <div class="con1">
+                <div class="tab">
+                    <ul class="tabs">
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                    <div class="tab-news">
+                    <ul class="news">
+                        <li><a href="javascript:openPop();">공지사항내용공지사항내용공지사항내용공지사항내용공지사항내용</a><span>공지사항날짜</span></li>
+                        <li><a href="#">공지사항내용공지사항내용공지사항내용공지사항내용공지사항내용</a><span>공지사항날짜</span></li>
+                        <li><a href="#">공지사항내용공지사항내용공지사항내용공지사항내용공지사항내용</a><span>공지사항날짜</span></li>
+                        <li><a href="#">공지사항내용공지사항내용공지사항내용공지사항내용공지사항내용</a><span>공지사항날짜</span></li>
+                    </ul>    
+                    </div>
+                </div>
+            </div>
+            <div class="con2">
+                <div class="tab2">
+                    <ul class="tabs2">
+                       <li><a href="#">갤러리</a></li>
+                    </ul>   
+                   <div class="gallery">
+                       <ul class="news2">
+                           <li><a href="#"><img src="./image/Flower1.jpg"width="80" height="80"></a></li>
+                           <li><a href="#"><img src="./image/Flower2.jpg"width="80" height="80"></a></li>
+                           <li><a href="#"><img src="./image/Flower1.jpg"width="80" height="80"></a></li>
+                       </ul>
+                   <div id="contentpop">
+                       <h1>부여 가을 연꽃축제 공지사항</h1>
+                       <hr>
+                       <p>
+                           부여가을 연꽃축제
+                       </p>
+                       <button id="exit" onclick="closePop()">닫기</button>
+                   </div>
+                </div>
+            </div>
+            </div>
+            <div class="con3">
+                <div class="banner">
+                    <a href="#"><h2>바로가기</h2><img src="./image/slideImgFlower3.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>copyright All rights reserved 부여 가을 연꽃축제</p>
+            <div class="bottomRight">
+                <ul class="sns">
+                    <li><a href="#"><img src="./image/fSns.png" alt="sns1"></a></li>
+                    <li><a href="#"><img src="./image/fSns2.png" alt="sns2"></a></li>
+                    <li><a href="#"><img src="./image/fSns3.png" alt="sns3"></a></li>
+                </ul>
+                <div class="familySite">
+                    <select class="fam">
+                        <option id="fam1">패밀리사이트</option>
+                        <option id="fam2">패밀리사이트2</option>
+                        <option id="fam3">패밀리사이트3</option>
+                        <option id="fam4">패밀리사이트4</option>
+                    </select>
+                </div>
+            </div>
+        </footer>
+        </div>
+    </div>
+
+    <script src="../jsQ/jquery-3.7.1.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
